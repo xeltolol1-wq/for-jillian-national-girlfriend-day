@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="love.css" />
+</head>
+<body>
+  <!-- Floating ornaments -->
+  <div class="ornaments" id="ornaments" aria-hidden="true">
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-lav"></div>
+    <div class="blob blob-gold"></div>
+  </div>
+
+  <!-- ===== PAGE ONE ===== -->
+  <section class="page active" id="page1">
+    <div class="wrap">
+      <h1 class="blur-in">Happy National Girlfriend Day</h1>
+      <p class="sub fade-up">To the most beautiful girl who changed my life.</p>
+
+      <div class="photo-wrap fade-up">
+        <div class="photo-frame">
+          <!-- Replace this src with your own photo (e.g. "our-picture.jpg") -->
+          <img src="photo1.jpg" alt="my favorite picture" />
+        </div>
+      </div>
+
+     <div class="voice">
+    <button class="voice-btn" type="button">
+        🎙 Play Voice Message
+    </button>
+
+    <audio id="voice1">
+        <source src="voice1.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</div>
+      <div class="card glass fade-up">
+        <p>
+          Every little thing you’ve done for me has stayed in my heart.<br />
+          Today isn’t about gifts.<br />
+          It’s about reminding you how deeply appreciated and loved you are.
+        </p>
+      </div>
+
+      <button class="nav-btn" data-go="page2">Next Page ❤️</button>
+    </div>
+  </section>
+
+  <!-- ===== PAGE TWO ===== -->
+  <section class="page" id="page2">
+    <div class="wrap">
+      <p class="heart-emoji">❤️</p>
+      <h1 class="blur-in">2 Years 2 Months</h1>
+      <p class="sub fade-up">Thank you for choosing me every single day.</p>
+
+      <div class="photo-wrap fade-up">
+        <div class="photo-frame">
+          <!-- Replace this src with your favorite picture -->
+          <img src="photo2.jpg" alt="Our favorite picture" />
+        </div>
+      </div>
+
+      <div class="voice" data-voice>
+        <button class="voice-btn" type="button">
+          <span class="mic"><span class="mic-icon">🎙️</span></span>
+          <span class="voice-label">Play Message</span>
+        </button>
+        <div class="waveform" hidden>
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="voice-note" hidden></p>
+  <audio data-audio>
+            <source src="voice2.mp3" type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="card glass gold-thread fade-up">
+        <h2>Forever Begins With Us</h2>
+        <p>
+          Every chapter we’ve shared—<br />
+          every smile,<br />
+          every misunderstanding,<br />
+          every lesson,<br />
+          every mistakes,<br />
+          every late-night conversation…<br />
+          has become one of my favorite memories.
+        </p>
+      </div>
+
+      <button class="love-btn" id="loveBtn" type="button">❤️ I Love You</button>
+
+      <button class="back-link" data-go="page1" type="button">back to the first page</button>
+    </div>
+  </section>
+
+  <!-- Heart burst container -->
+  <div class="burst-layer" id="burstLayer" aria-hidden="true"></div>
+
+  <!-- Love letter modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card glass gold-thread unfold">
+      <p>
+        Thank you for spending 2 years and 2 months with me.<br /><br />
+        I hope one day this becomes one of the memories we laugh about together.<br /><br />
+        I love you more than anything, and I’ll keep choosing you tomorrow.
+      </p>
+      <button class="close-btn" data-close type="button">close 🎀</button>
+    </div>
+  </div>
+
+  <!-- 22-second whisper -->
+  <p class="whisper" id="whisper" hidden>
+    “If you’ve made it this far… thank you for reading my heart.”
+  </p>
+
+  <footer class="footer">
+    Made with ❤️<br />
+    <br />
+    By someone who loves you very much.
+  </footer>
+
+  <script src="love.js"></script>
+</body>
+</html>
